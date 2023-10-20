@@ -1,5 +1,5 @@
 import React, { CSSProperties, FunctionComponent, ReactNode} from "react";
-
+//CSSProperties, FunctionComponent, ReactNodeはTypeScriptでReact使えるようにするための型？
 
 // Pageからデータの受け渡しをするときの型？
 interface Props {

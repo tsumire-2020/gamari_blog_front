@@ -1,10 +1,10 @@
-import React, { FunctionComponent} from "react";
+import React, { FunctionComponent } from "react";
 
 interface Props {
-  children:React.ReactNode;
+  children: React.ReactNode;
   className?: string;
 }
 
 export const Main: FunctionComponent<Props> = ({ children, className }) => {
-  return <Main className={`${className || ""}`}>{children}</Main>;
+  return <main className={`${className || ""}`}>{children}</main>;
 };

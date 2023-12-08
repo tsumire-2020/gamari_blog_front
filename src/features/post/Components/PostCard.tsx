@@ -3,9 +3,9 @@ import Image from "next/image";
 
 import { Block } from "@/features/base/components/Block";
 import { Relative } from "@/features/base/components/Relative";
-import { InLine } from "../base/components/InLine";
-import { Description } from "../base/components/Description";
-import { Absolute } from "../base/components/Abusolute";
+import { InLine } from "../../base/components/InLine";
+import { Description } from "../../base/components/Description";
+import { Absolute } from "../../base/components/Abusolute";
 
 
 interface Props {

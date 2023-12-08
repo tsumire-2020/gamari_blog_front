@@ -5,6 +5,7 @@ import { ProfilePanel } from "./ProfilePanel";
 import { SearchBox } from "./SearchBox";
 import { CategoryPanel } from "./CategoryPanel";
 import { ManagePanel } from "./ManagePanel";
+import { useContextCategories } from "@/features/category/contexts/CategoriesContexts";
 
 // TODO add
 interface Props {

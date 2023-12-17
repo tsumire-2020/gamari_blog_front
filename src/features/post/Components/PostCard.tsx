@@ -6,13 +6,16 @@ import { Relative } from "@/features/base/components/Relative";
 import { InLine } from "../../base/components/InLine";
 import { Description } from "../../base/components/Description";
 import { Absolute } from "../../base/components/Abusolute";
+import Link from "next/link";
+import { Post } from "../types";
 
 
 interface Props {
   className?: string;
+  post: Post
 }
 
-export const PostCard: FunctionComponent<Props> = ({ className }) => {
+export const PostCard: FunctionComponent<Props> = ({ className, post }) => {
   return (
     <Block
       className={`
@@ -23,9 +26,13 @@ export const PostCard: FunctionComponent<Props> = ({ className }) => {
         ${className}
       `}
     >
+
+      {/* NextJSではリンクを使用Link */}
+      <Link href="/posts/${post.id}">
       <Relative className="h-[160px] transform hover:scale-110 transition duration-500 ease-in-out cursor-pointer">
         <Image src={"/images/card.jpg"} fill sizes="100%" alt="...image" />
       </Relative>
+      </Link>
 
       <Relative className="h-[180px] p-8">
         <Block

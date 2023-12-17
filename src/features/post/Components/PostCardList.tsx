@@ -16,7 +16,7 @@ interface Props {
   return (
     <Block className="grid grid-cols-1 lg:grid-cols-2 place-items-center gap-12 ">
       {posts.map((post) => (
-        <PostCard key={post.id} />
+        <PostCard key={post.id} post ={post}/>
         // <PostCard key={`card-${post.id}`} /> バッティング対策（一意にできない場合
       ))}
       {/* <PostCard />

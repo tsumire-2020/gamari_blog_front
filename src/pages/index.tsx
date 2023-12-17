@@ -1,5 +1,6 @@
 import { Block } from "@/features/base/components/Block";
 import { Header } from "@/features/base/components/Header";
+import { Layoyut } from "@/features/base/components/Layoyut";
 import { Main } from "@/features/base/components/Main";
 import { Pagination } from "@/features/base/components/Pagination";
 import { Sidebar } from "@/features/base/components/Sidebar";
@@ -22,9 +23,11 @@ export default function Home() {
         <Block className="max-w-[1100px] mx-auto grid grid-cols-[1fr,min-content] gap-8">
           {/* TODO fix className */}
           <Block className="mt-10">
-            <PostCardList posts={posts} />
+          <Layoyut>
+    <PostCardList posts={posts} />
 
-            <Pagination />
+    <Pagination />
+    </Layoyut>
           </Block>
 
           <Sidebar className="mt-10" />
